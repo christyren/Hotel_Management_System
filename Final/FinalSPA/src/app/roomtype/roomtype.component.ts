@@ -14,9 +14,9 @@ export class RoomtypeComponent implements OnInit {
   errFlg: boolean = false;
   tab: number = 1;
   roomtype: Roomtype = {
-    Id:0,
-    RTDesc: '',
-    Rent: ''
+    id:0,
+    rtDesc: '',
+    rent: ''
   };
 
   buttonType:string='Create';
@@ -72,7 +72,7 @@ export class RoomtypeComponent implements OnInit {
 
       )
     } else if (buttonType == 'Delete') {
-      this.roomtypeService.deleteRoomtype(this.roomtype.Id).subscribe(
+      this.roomtypeService.deleteRoomtype(this.roomtype.id).subscribe(
         (response: any) => {
           this.errFlg = false;
           this.router.navigate([this.returnUrl]);
@@ -82,7 +82,7 @@ export class RoomtypeComponent implements OnInit {
     } else {
       // this.clean();
 
-      this.roomtypeService.getRoomtype(this.roomtype.Id).subscribe(
+      this.roomtypeService.getRoomtype(this.roomtype.id).subscribe(
         (response: any) => {
           // this.errFlg = false;
           // this.router.navigate(['']);myObservable.subscribe(

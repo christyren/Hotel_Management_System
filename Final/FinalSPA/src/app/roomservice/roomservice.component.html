@@ -21,27 +21,27 @@
         <div class="form-group">
             <div class="form-group" *ngIf="tab!=1">
                 <label for="ID">Id</label>
-                <input type="ID" class="form-control" id="ID" name="ID" [(ngModel)]="roomservice.Id" />
+                <input type="ID" class="form-control" id="ID" name="ID" [(ngModel)]="roomservice.id" />
             </div>
             <div class="form-group" *ngIf="tab!=3&&tab!=4">
                 <label for="RoomNo">RoomNo</label>
                 <input type="RoomNo" class="form-control" id="RoomNo" aria-describedby="RoomNoHelp" name="RoomNo"
-                    [(ngModel)]="roomservice.RoomNo" />
+                    [(ngModel)]="roomservice.roomNo" />
             </div>
             <div class="form-group" *ngIf="tab!=3&&tab!=4">
                 <label for="SDesc">SDesc</label>
                 <input type="SDesc" class="form-control" id="SDesc" aria-describedby="SDescHelp" name="SDesc"
-                    [(ngModel)]="roomservice.SDesc" />
+                    [(ngModel)]="roomservice.sDesc" />
             </div>
             <div class="form-group" *ngIf="tab!=3&&tab!=4">
                 <label for="Amount">Amount</label>
                 <input type="Amount" class="form-control" id="Amount" aria-describedby="AmountHelp" name="Amount"
-                    [(ngModel)]="roomservice.Amount" />
+                    [(ngModel)]="roomservice.amount" />
             </div>
             <div class="form-group" *ngIf="tab!=3&&tab!=4">
                 <label for="ServiceDate">ServiceDate</label>
                 <input type="ServiceDate" class="form-control" id="ServiceDate" aria-describedby="ServiceDateHelp" name="ServiceDate"
-                    [(ngModel)]="roomservice.ServiceDate" />
+                    [(ngModel)]="roomservice.serviceDate" />
             </div>
         </div>
 
@@ -57,10 +57,10 @@
 
 
     <ng-container *ngIf="tab==4" >
-        <div>Roomservice RTCode: {{roomservice.RoomNo}}</div>
-        <div>Roomservice Status: {{roomservice.SDesc}}</div>
-        <div>Roomservice RTCode: {{roomservice.Amount}}</div>
-        <div>Roomservice Status: {{roomservice.ServiceDate}}</div>
+        <div>Roomservice RTCode: {{roomservice.roomNo}}</div>
+        <div>Roomservice Status: {{roomservice.sDesc}}</div>
+        <div>Roomservice RTCode: {{roomservice.amount}}</div>
+        <div>Roomservice Status: {{roomservice.serviceDate}}</div>
     </ng-container>
     <!-- <ng-container *ngIf="tab==4&&Customer.email==='' " >
         <h5>The Customer doesn't exist with id = {{Customer.id}}</h5>

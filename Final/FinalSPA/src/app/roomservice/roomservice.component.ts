@@ -15,11 +15,11 @@ export class RoomserviceComponent implements OnInit {
   errFlg: boolean = false;
   tab: number = 1;
   roomservice: Roomservice = {
-    Id: 0,
-    RoomNo: 0,
-    SDesc: '',
-    Amount: 0,
-    ServiceDate: ''
+    id: 0,
+    roomNo: 0,
+    sDesc: '',
+    amount: 0,
+    serviceDate: ''
   };
 
   buttonType:string='Create';
@@ -75,7 +75,7 @@ export class RoomserviceComponent implements OnInit {
 
       )
     } else if (buttonType == 'Delete') {
-      this.roomserviceService.deleteRoomservice(this.roomservice.Id).subscribe(
+      this.roomserviceService.deleteRoomservice(this.roomservice.id).subscribe(
         (response: any) => {
           this.errFlg = false;
           this.router.navigate([this.returnUrl]);
@@ -85,7 +85,7 @@ export class RoomserviceComponent implements OnInit {
     } else {
       // this.clean();
 
-      this.roomserviceService.getRoomservice(this.roomservice.Id).subscribe(
+      this.roomserviceService.getRoomservice(this.roomservice.id).subscribe(
         (response: any) => {
           // this.errFlg = false;
           // this.router.navigate(['']);myObservable.subscribe(

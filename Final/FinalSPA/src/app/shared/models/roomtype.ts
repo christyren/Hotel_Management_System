@@ -1,6 +1,6 @@
 import { Room } from "./room";
 export interface Roomtype {
-    Id:number;
-    RTDesc:string;
-    Rent:any;
+    id:number;
+    rtDesc:string;
+    rent:any;
 }

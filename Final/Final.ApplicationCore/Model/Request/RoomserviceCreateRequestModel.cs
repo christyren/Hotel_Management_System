@@ -13,6 +13,6 @@ namespace Final.ApplicationCore.Model.Request
         public string SDesc { get; set; }
         public decimal Amount { get; set; }
         public DateTime ServiceDate { get; set; }
-        public Room Room { get; set; }
+
     }
 }

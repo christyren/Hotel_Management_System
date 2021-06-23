@@ -26,47 +26,47 @@
             <div class="form-group" *ngIf="tab!=3&&tab!=4">
                 <label for="RoomNo">RoomNo</label>
                 <input type="RoomNo" class="form-control" id="RoomNo" aria-describedby="RoomNoHelp" name="RoomNo"
-                    [(ngModel)]="customer.RoomNo" />
+                    [(ngModel)]="customer.roomNo" />
             </div>
             <div class="form-group" *ngIf="tab!=3&&tab!=4">
                 <label for="CName">CName</label>
                 <input type="CName" class="form-control" id="CName" aria-describedby="CNameHelp" name="CName"
-                    [(ngModel)]="customer.CName" />
+                    [(ngModel)]="customer.cName" />
             </div>
             <div class="form-group" *ngIf="tab!=3&&tab!=4">
                 <label for="Address">Address</label>
                 <input type="Address" class="form-control" id="Address" aria-describedby="AddressHelp" name="Address"
-                    [(ngModel)]="customer.Address" />
+                    [(ngModel)]="customer.address" />
             </div>
             <div class="form-group" *ngIf="tab!=3&&tab!=4">
                 <label for="Phone">Phone</label>
                 <input type="Phone" class="form-control" id="Phone" aria-describedby="PhoneHelp" name="Phone"
-                    [(ngModel)]="customer.Phone" />
+                    [(ngModel)]="customer.phone" />
             </div>
             <div class="form-group" *ngIf="tab!=3&&tab!=4">
                 <label for="Email">Email</label>
                 <input type="Email" class="form-control" id="Email" aria-describedby="EmailHelp" name="Email"
-                    [(ngModel)]="customer.Email" />
+                    [(ngModel)]="customer.email" />
             </div>
             <div class="form-group" *ngIf="tab!=3&&tab!=4">
                 <label for="Checkin">Checkin</label>
                 <input type="Checkin" class="form-control" id="Checkin" aria-describedby="CheckinHelp" name="Checkin"
-                    [(ngModel)]="customer.Checkin" />
+                    [(ngModel)]="customer.checkin" />
             </div>
             <div class="form-group" *ngIf="tab!=3&&tab!=4">
                 <label for="TotalPersons">TotalPersons</label>
                 <input type="TotalPersons" class="form-control" id="TotalPersons" aria-describedby="TotalPersonsHelp" name="TotalPersons"
-                    [(ngModel)]="customer.TotalPersons" />
+                    [(ngModel)]="customer.totalPersons" />
             </div>
             <div class="form-group" *ngIf="tab!=3&&tab!=4">
                 <label for="BookingDays">BookingDays</label>
                 <input type="BookingDays" class="form-control" id="BookingDays" aria-describedby="BookingDaysHelp" name="BookingDays"
-                    [(ngModel)]="customer.BookingDays" />
+                    [(ngModel)]="customer.bookingDays" />
             </div>
             <div class="form-group" *ngIf="tab!=3&&tab!=4">
                 <label for="Advance">Advance</label>
                 <input type="Advance" class="form-control" id="Advance" aria-describedby="AdvanceHelp" name="Advance"
-                    [(ngModel)]="customer.Advance" />
+                    [(ngModel)]="customer.advance" />
             </div>
         </div>
 
@@ -82,15 +82,15 @@
 
 
     <ng-container *ngIf="tab==4" >
-        <div>Customer roomNo: {{customer.RoomNo}}</div>
-        <div>Customer cName: {{customer.CName}}</div>
-        <div>Customer address:{{customer.Address}}</div>
-        <div>Customer phone: {{customer.Phone}}</div>
-        <div>Customer email: {{customer.Email}}</div>
-        <div>Customer checkin: {{customer.Checkin}}</div>
-        <div>Customer totalPersons: {{customer.TotalPersons}}</div>
-        <div>Customer bookingDays: {{customer.BookingDays}}</div>
-        <div>Customer advance: {{customer.Advance}}</div>
+        <div>Customer roomNo: {{customer.roomNo}}</div>
+        <div>Customer cName: {{customer.cName}}</div>
+        <div>Customer address:{{customer.address}}</div>
+        <div>Customer phone: {{customer.phone}}</div>
+        <div>Customer email: {{customer.email}}</div>
+        <div>Customer checkin: {{customer.checkin}}</div>
+        <div>Customer totalPersons: {{customer.totalPersons}}</div>
+        <div>Customer bookingDays: {{customer.bookingDays}}</div>
+        <div>Customer advance: {{customer.advance}}</div>
     </ng-container>
     <!-- <ng-container *ngIf="tab==4&&Customer.email==='' " >
         <h5>The Customer doesn't exist with id = {{Customer.id}}</h5>

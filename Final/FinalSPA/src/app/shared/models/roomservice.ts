@@ -1,14 +1,14 @@
 import { Room } from "./room";
 export interface Roomservice{
-    Id:number;
-    RoomNo:number;
-    SDesc:string;
-    Amount:any;
-    ServiceDate:string;
+    id:number;
+    roomNo:number;
+    sDesc:string;
+    amount:any;
+    serviceDate:string;
 }
 
-export interface ServicesUndCerRoomNo {
-    userId: number;
-    servicesForRoomNo: Roomservice[];
-  }
+// export interface ServicesUndCerRoomNo {
+//     userId: number;
+//     servicesForRoomNo: Roomservice[];
+//   }
   

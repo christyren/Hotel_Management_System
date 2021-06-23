@@ -3,7 +3,7 @@ import { Customer } from "./customer";
 import { Roomservice} from "./roomservice"
 
 export interface Room{
-    Id:number;
-    RTCode:number;
-    Status:number;
+    id:number;
+    rtCode:number;
+    status:number;
 }

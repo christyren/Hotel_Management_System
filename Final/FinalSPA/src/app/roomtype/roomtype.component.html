@@ -21,17 +21,17 @@
         <div class="form-group">
             <div class="form-group" *ngIf="tab!=1">
                 <label for="ID">Id</label>
-                <input type="ID" class="form-control" id="ID" name="ID" [(ngModel)]="roomtype.Id" />
+                <input type="ID" class="form-control" id="ID" name="ID" [(ngModel)]="roomtype.id" />
             </div>
             <div class="form-group" *ngIf="tab!=3&&tab!=4">
                 <label for="RTDesc">RTDesc</label>
                 <input type="RTDesc" class="form-control" id="RTDesc" aria-describedby="RTDescHelp" name="RTDesc"
-                    [(ngModel)]="roomtype.RTDesc" />
+                    [(ngModel)]="roomtype.rtDesc" />
             </div>
             <div class="form-group" *ngIf="tab!=3&&tab!=4">
                 <label for="Rent">Rent</label>
                 <input type="Rent" class="form-control" id="SDesc" aria-describedby="RentHelp" name="Rent"
-                    [(ngModel)]="roomtype.Rent" />
+                    [(ngModel)]="roomtype.rent" />
             </div>
   
         </div>
@@ -48,8 +48,8 @@
 
 
     <ng-container *ngIf="tab==4" >
-        <div>Roomtype RTDesc: {{roomtype.RTDesc}}</div>
-        <div>Roomtype Rent: {{roomtype.Rent}}</div>
+        <div>Roomtype RTDesc: {{roomtype.rtDesc}}</div>
+        <div>Roomtype Rent: {{roomtype.rent}}</div>
     </ng-container>
     <!-- <ng-container *ngIf="tab==4&&Customer.email==='' " >
         <h5>The Customer doesn't exist with id = {{Customer.id}}</h5>

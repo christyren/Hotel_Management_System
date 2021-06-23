@@ -17,15 +17,15 @@ export class CustomerComponent implements OnInit {
   tab: number = 1;
   customer: Customer = {
     id:0,
-    RoomNo: 0,
-    CName: '',
-    Address: '',
-    Phone: '',
-    Email: '',
-    Checkin: '',
-    TotalPersons:0,
-    BookingDays:0,
-    Advance: 0
+    roomNo: 0,
+    cName: '',
+    address: '',
+    phone: '',
+    email: '',
+    checkin: '',
+    totalPersons:0,
+    bookingDays:0,
+    advance: 0
   };
 
 
