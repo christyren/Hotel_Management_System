@@ -1,0 +1,24 @@
+<!-- this component handle all the employees in my database, and show their name -->
+<br>
+<h4>The services for Room Number {{RoomNo}} are: </h4>
+<ul *ngFor="let rs of services ">
+<li>Room Number: {{rs.roomNo}}</li>
+<li>Service Description: {{rs.sDesc}}</li>
+<li>Amount: {{rs.amount}}</li>
+<li>Service Date: {{rs.serviceDate}}</li>
+</ul>
+
+<!-- <ul>
+    <li>Room Number: {{RoomNo}}</li>
+    <li>Room Number: {{services.roomNo}}</li>
+    <li>Service Description: {{services.sDesc}}</li>
+    <li>Amount: {{services.amount}}</li>
+    <li>Service Date: {{services.serviceDate}}</li>
+</ul> -->
+
+
+<!-- <h5>All Customers:</h5>
+  <ul  *ngFor="let c of customers">
+      <li>Customer Id: {{c.id}}</li>
+      <li><a href="#" [routerLink]="['room/services/',c.roomNo]">{{c.cName}}</a></li>
+  </ul> -->

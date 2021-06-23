@@ -1,0 +1,98 @@
+<div class="container">
+    <div class="alert alert-success">
+        <b>Customers Page</b>
+    </div>
+
+    <div class="row">
+        <div class="col">
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-dark" id="dropdownBasic3" ngbDropdownToggle>Actions</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button ngbDropdownItem (click)="tab=1">Create</button>
+              <button ngbDropdownItem (click)="tab=2">Update</button>
+              <button ngbDropdownItem (click)="tab=3">Delete</button>
+              <button ngbDropdownItem (click)="tab=4">Search</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <form #loginForm="ngForm">
+        <div class="form-group">
+            <div class="form-group" *ngIf="tab!=1">
+                <label for="ID">Id</label>
+                <input type="ID" class="form-control" id="ID" name="ID" [(ngModel)]="customer.id" />
+            </div>
+            <div class="form-group" *ngIf="tab!=3&&tab!=4">
+                <label for="RoomNo">RoomNo</label>
+                <input type="RoomNo" class="form-control" id="RoomNo" aria-describedby="RoomNoHelp" name="RoomNo"
+                    [(ngModel)]="customer.RoomNo" />
+            </div>
+            <div class="form-group" *ngIf="tab!=3&&tab!=4">
+                <label for="CName">CName</label>
+                <input type="CName" class="form-control" id="CName" aria-describedby="CNameHelp" name="CName"
+                    [(ngModel)]="customer.CName" />
+            </div>
+            <div class="form-group" *ngIf="tab!=3&&tab!=4">
+                <label for="Address">Address</label>
+                <input type="Address" class="form-control" id="Address" aria-describedby="AddressHelp" name="Address"
+                    [(ngModel)]="customer.Address" />
+            </div>
+            <div class="form-group" *ngIf="tab!=3&&tab!=4">
+                <label for="Phone">Phone</label>
+                <input type="Phone" class="form-control" id="Phone" aria-describedby="PhoneHelp" name="Phone"
+                    [(ngModel)]="customer.Phone" />
+            </div>
+            <div class="form-group" *ngIf="tab!=3&&tab!=4">
+                <label for="Email">Email</label>
+                <input type="Email" class="form-control" id="Email" aria-describedby="EmailHelp" name="Email"
+                    [(ngModel)]="customer.Email" />
+            </div>
+            <div class="form-group" *ngIf="tab!=3&&tab!=4">
+                <label for="Checkin">Checkin</label>
+                <input type="Checkin" class="form-control" id="Checkin" aria-describedby="CheckinHelp" name="Checkin"
+                    [(ngModel)]="customer.Checkin" />
+            </div>
+            <div class="form-group" *ngIf="tab!=3&&tab!=4">
+                <label for="TotalPersons">TotalPersons</label>
+                <input type="TotalPersons" class="form-control" id="TotalPersons" aria-describedby="TotalPersonsHelp" name="TotalPersons"
+                    [(ngModel)]="customer.TotalPersons" />
+            </div>
+            <div class="form-group" *ngIf="tab!=3&&tab!=4">
+                <label for="BookingDays">BookingDays</label>
+                <input type="BookingDays" class="form-control" id="BookingDays" aria-describedby="BookingDaysHelp" name="BookingDays"
+                    [(ngModel)]="customer.BookingDays" />
+            </div>
+            <div class="form-group" *ngIf="tab!=3&&tab!=4">
+                <label for="Advance">Advance</label>
+                <input type="Advance" class="form-control" id="Advance" aria-describedby="AdvanceHelp" name="Advance"
+                    [(ngModel)]="customer.Advance" />
+            </div>
+        </div>
+
+        <input type="submit" class="btn btn-info" value="Create" name="btn1" *ngIf="tab==1" (click)="submit('Create')" />
+        <input type="submit" class="btn btn-primary" value="Update" name="btn2" *ngIf="tab==2" (click)="submit('Update')" />
+        <input type="submit" class="btn btn-danger" value="Delete" name="btn3" *ngIf="tab==3" (click)="submit('Delete')" />
+        <input type="submit" class="btn btn-danger" value="Search" name="btn4" *ngIf="tab==4" (click)="submit('Search')" />
+
+    </form>
+
+</div>
+<div>
+
+
+    <ng-container *ngIf="tab==4" >
+        <div>Customer roomNo: {{customer.RoomNo}}</div>
+        <div>Customer cName: {{customer.CName}}</div>
+        <div>Customer address:{{customer.Address}}</div>
+        <div>Customer phone: {{customer.Phone}}</div>
+        <div>Customer email: {{customer.Email}}</div>
+        <div>Customer checkin: {{customer.Checkin}}</div>
+        <div>Customer totalPersons: {{customer.TotalPersons}}</div>
+        <div>Customer bookingDays: {{customer.BookingDays}}</div>
+        <div>Customer advance: {{customer.Advance}}</div>
+    </ng-container>
+    <!-- <ng-container *ngIf="tab==4&&Customer.email==='' " >
+        <h5>The Customer doesn't exist with id = {{Customer.id}}</h5>
+     </ng-container> -->
+</div>

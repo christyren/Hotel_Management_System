@@ -1,0 +1,15 @@
+C:\Users\shuyi\Antra\FinalProject\Final\Final.ApplicationCore\bin\Debug\net5.0\Final.ApplicationCore.deps.json
+C:\Users\shuyi\Antra\FinalProject\Final\Final.ApplicationCore\bin\Debug\net5.0\Final.ApplicationCore.runtimeconfig.json
+C:\Users\shuyi\Antra\FinalProject\Final\Final.ApplicationCore\bin\Debug\net5.0\Final.ApplicationCore.runtimeconfig.dev.json
+C:\Users\shuyi\Antra\FinalProject\Final\Final.ApplicationCore\bin\Debug\net5.0\Final.ApplicationCore.dll
+C:\Users\shuyi\Antra\FinalProject\Final\Final.ApplicationCore\bin\Debug\net5.0\ref\Final.ApplicationCore.dll
+C:\Users\shuyi\Antra\FinalProject\Final\Final.ApplicationCore\bin\Debug\net5.0\Final.ApplicationCore.pdb
+C:\Users\shuyi\Antra\FinalProject\Final\Final.ApplicationCore\obj\Debug\net5.0\Final.ApplicationCore.csproj.AssemblyReference.cache
+C:\Users\shuyi\Antra\FinalProject\Final\Final.ApplicationCore\obj\Debug\net5.0\Final.ApplicationCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shuyi\Antra\FinalProject\Final\Final.ApplicationCore\obj\Debug\net5.0\Final.ApplicationCore.AssemblyInfoInputs.cache
+C:\Users\shuyi\Antra\FinalProject\Final\Final.ApplicationCore\obj\Debug\net5.0\Final.ApplicationCore.AssemblyInfo.cs
+C:\Users\shuyi\Antra\FinalProject\Final\Final.ApplicationCore\obj\Debug\net5.0\Final.ApplicationCore.csproj.CoreCompileInputs.cache
+C:\Users\shuyi\Antra\FinalProject\Final\Final.ApplicationCore\obj\Debug\net5.0\Final.ApplicationCore.dll
+C:\Users\shuyi\Antra\FinalProject\Final\Final.ApplicationCore\obj\Debug\net5.0\ref\Final.ApplicationCore.dll
+C:\Users\shuyi\Antra\FinalProject\Final\Final.ApplicationCore\obj\Debug\net5.0\Final.ApplicationCore.pdb
+C:\Users\shuyi\Antra\FinalProject\Final\Final.ApplicationCore\obj\Debug\net5.0\Final.ApplicationCore.genruntimeconfig.cache

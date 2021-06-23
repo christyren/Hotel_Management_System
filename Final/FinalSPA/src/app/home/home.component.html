@@ -1,0 +1,15 @@
+<!-- 
+<div *ngFor="let customer of customers">
+
+
+    <li>{{customer.CName}}</li>
+
+</div> -->
+
+<h5>All Customers:</h5>
+<br>
+  <ul  *ngFor="let c of customers">
+      <li>Customer Id: {{c.id}}</li>
+      <li>Customer Name: <a href="#" [routerLink]="['room/services/',c.roomNo]">{{c.cName}}</a></li>
+  </ul>
+
